@@ -1,0 +1,40 @@
+body {
+  background-color: #343a40;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 0px 15px 0px;
+  background-color: black;
+  
+}
+
+a {
+  /* padding-right: 25px; */
+  text-decoration: none !important;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+}
+
+.input-sm {
+  padding: .3rem .75rem;
+}
+
+.btn-color {
+  border-color: #FFF7AE;
+  color: #FFF7AE;
+}
+
+.btn-color:hover {
+  background-color: #FFF7AE;
+  border-color: #FFF7AE;
+  color: #343a40;
+}
