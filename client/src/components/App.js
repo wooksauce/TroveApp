@@ -7,6 +7,7 @@ import Men from './Men';
 import Women from './Women';
 import Login from './Login';
 import Footer from './Footer';
+import 'react-dates/lib/css/_datepicker.css';
 
 class App extends Component {
   constructor(props) {

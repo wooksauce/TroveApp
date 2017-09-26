@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+import DateRangePickerWrapper from '../../wrapper/DateRangePickerWrapper.jsx'
 
 class Home extends Component {
   render() {
     return (
       <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+        <DateRangePickerWrapper
+          startDate={this.state.startDate} // momentPropTypes.momentObj or null,
+          endDate={this.state.endDate} // momentPropTypes.momentObj or null,
+          onDatesChange={({ startDate, endDate }) => this.setState({ startDate, endDate })} // PropTypes.func.isRequired,
+          focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+          onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
+        />
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

@@ -10,6 +10,7 @@ const webpackConfig = {
     loaders: [],
   },
   resolve: {
+    modules: ["node_modules"],
     extensions: ['.js', '.jsx'],
   },
   devtool: 'inline-source-map',
